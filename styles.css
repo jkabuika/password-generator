@@ -20,6 +20,16 @@ html {
   list-style: none;
 }
 
-.options-container {
-  background-color: #fff;
+.options-selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.character-types {
+  list-style: none;
+}
+
+.character-types li {
+  margin-bottom: 10px;
+  font-size: 14px;
 }
