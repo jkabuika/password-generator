@@ -1,3 +1,25 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.password-container, .options-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 16px;
+}
+
+.password-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-container-btn {
+  display: flex;
+  list-style: none;
+}
+
+.options-container {
+  background-color: #fff;
 }
