@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
 
 const passwordDisplay = document.querySelector('.password');
 const copyBtn = document.querySelector('.copy-btn')
@@ -14,3 +13,11 @@ const charSets = {
   symbols: "!@#$%^&*?"
 };
 
+function generatePassword() {
+  const length = parseInt(lengthInput.value) || 8;
+}
+
+let charPool = "";
+checkboxes.forEach((box, i) => {
+  if (box.checked) charPool += Object.values(charSets)[i];
+});
