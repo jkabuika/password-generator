@@ -21,3 +21,13 @@ let charPool = "";
 checkboxes.forEach((box, i) => {
   if (box.checked) charPool += Object.values(charSets)[i];
 });
+
+if (!charPool) {
+  passwordDisplay.textContent = "Select Options";
+  return;
+}
+
+let password = "";
+for (let i = 0; i < length; i++) {
+  password += charPool[Math.floor(Math.random() * charPool.length)];
+}
